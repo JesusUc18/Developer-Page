@@ -7,6 +7,10 @@
     <!-- Primero se pone el Normalize -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- Importación de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <!-- Segundo se pone el Styles -->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,12 +20,14 @@
     <header>
         <h1 class="my-title">Jesús Uc <span>Developer</span></h1>
     </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
     <section>
         <h2>Desarrollador Full Stack</h2>
         <svg

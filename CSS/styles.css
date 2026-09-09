@@ -1,3 +1,12 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+
 html {
     font-size: 62.5%;
 }
@@ -13,4 +22,33 @@ body {
 
 .my-title span{
     font-size: 2rem;
+}
+
+.navegacion-principal {
+    background-color: var(--secundario); /* Margin es por fuera y padding es por dentro */
+
+    display: flex; /* Flexbox es para alinear elementos */
+    justify-content: space-between;
+    font-weight: bold; /* Negritas */
+    font-size: 2rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none; /* Esto remueve el subrayado*/
+    padding: 1rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
 }
