@@ -13,6 +13,8 @@ html {
 
 body {
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    color: var(--oscuro);
 }
 
 .my-title{
@@ -26,11 +28,12 @@ body {
 
 .navegacion-principal {
     background-color: var(--secundario); /* Margin es por fuera y padding es por dentro */
-
     display: flex; /* Flexbox es para alinear elementos */
+    flex-direction: column;
     justify-content: space-between;
     font-weight: bold; /* Negritas */
     font-size: 2rem;
+    align-items: center;
 }
 
 .navegacion-principal a:hover{
@@ -51,4 +54,36 @@ body {
 
 .nav-bg {
     background-color: var(--secundario);
+}
+
+.hero {
+    background-image: url("../img/study.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-hero {
+    text-align: center;
+}
+
+.contenido-hero h2 {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 780px){
+    .navegacion-principal{
+        flex-direction: row;
+    }
 }
